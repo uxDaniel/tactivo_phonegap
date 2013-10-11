@@ -152,7 +152,7 @@ div,span,ul,ol,li,input,textarea,article,section,aside,header,footer,.row{-moz-b
 .logo{background:#1abbee url(../img/logo_mini.png) 4px center no-repeat;line-height:44px;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:20px !important}.logo a{display:block;color:#fff !important;text-decoration:none;padding-left:40px}
 .logo.home{text-align:center;padding-left:0;padding-top:50px;background:#1abbee url(../img/logo_med.png) center 5px no-repeat;margin:0 auto}
 .menu{margin-top:15px !important;margin-bottom:15px !important}
-.map-canvas{width:100%;height:100%}.map-canvas img{max-width:initial}
+.map-canvas{width:100%;min-height:320px;height:100%}.map-canvas img{max-width:initial}
 .routes .ui-btn,.routes.ui-link-inherit span{color:#fff}.routes .ui-btn.E,.routes.ui-link-inherit span.E{background:#2e2482}
 .routes .ui-btn.T,.routes.ui-link-inherit span.T{background:#2e2482}
 .routes .ui-btn.P,.routes.ui-link-inherit span.P{background:#2e2482}
