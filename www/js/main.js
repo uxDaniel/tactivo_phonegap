@@ -111,10 +111,10 @@ window.ta = {
 		init: function() {
 			this.defaultPosition = new google.maps.LatLng(3.422556, -76.517222);
 			this.currentPosition = this.defaultPosition;
-			this.currentPositionMarker: null;
-			this.nearbyStopsMarkers: [];
+			this.currentPositionMarker = null;
+			this.nearbyStopsMarkers = [];
 			this.ajaxTimeout = null;
-			this.$infoPopup: $('#info-popup');
+			this.$infoPopup = $('#info-popup');
 			this.marker_icons = {
 				dot: {
 					url: 'img/marker_dot.png',
