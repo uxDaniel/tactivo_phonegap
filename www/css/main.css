@@ -121,7 +121,7 @@ textarea{resize:vertical}
 html,body{height:100%}
 .row{max-width:initial}
 div,span,ul,ol,li,input,textarea,article,section,aside,header,footer,.row{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Roboto',sans-serif !important}
-.ui-page{position:relative !important;margin:0 auto !important;overflow:hidden !important;max-width:480px}
+.ui-page{position:relative !important;margin:0 auto !important;overflow:hidden !important}
 .ui-content{padding:10px}
 .ui-btn-inner{text-overflow:initial;white-space:initial;line-height:13px}
 .ui-btn-active{color:#fff !important}
@@ -149,8 +149,8 @@ div,span,ul,ol,li,input,textarea,article,section,aside,header,footer,.row{-moz-b
 #buscar .ui-listview-filter{margin-top:0}
 #ruta .type{line-height:40px}#ruta .type img{float:right}
 #noticias .ui-content{overflow:hidden}
-.logo{background:#1abbee url(../img/logo.png) 4px center no-repeat;line-height:44px;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:20px !important}.logo a{display:block;color:#fff !important;text-decoration:none;padding-left:40px}
-.logo.home{text-align:center;padding-left:0;padding-top:50px;background:#1abbee url(../img/touch/apple-touch-icon.png) center 5px no-repeat;margin:0 auto}
+.logo{background:#1abbee url(../img/logo_mini.png) 4px center no-repeat;line-height:44px;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:20px !important}.logo a{display:block;color:#fff !important;text-decoration:none;padding-left:40px}
+.logo.home{text-align:center;padding-left:0;padding-top:50px;background:#1abbee url(../img/logo_med.png) center 5px no-repeat;margin:0 auto}
 .menu{margin-top:15px !important;margin-bottom:15px !important}
 .map-canvas{width:100%;height:100%}.map-canvas img{max-width:initial}
 .routes .ui-btn,.routes.ui-link-inherit span{color:#fff}.routes .ui-btn.E,.routes.ui-link-inherit span.E{background:#2e2482}
