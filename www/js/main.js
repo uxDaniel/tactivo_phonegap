@@ -107,76 +107,40 @@ window.ta = {
 			}
 		}
 	},
-
 	map: {
-		defaultPosition: new google.maps.LatLng(3.422556, -76.517222),
-		currentPosition: this.defaultPosition,
-		currentPositionMarker: null,
-		nearbyStopsMarkers: [],
-		ajaxTimeout: null,
-		$infoPopup: $('#info-popup'),
-		marker_icons: {
-			dot: {
-				url: 'img/marker_dot.png',
-				anchor: new google.maps.Point(16.5,16.5),
-				scaledSize: new google.maps.Size(22,22)
-			},
-			dot_shadow: {
-				url: 'img/marker_dot_shadow.png',
-				anchor: new google.maps.Point(22,22),
-				scaledSize: new google.maps.Size(33,33)
-			},
-			// 1: {
-			// 	url: 'img/marker_icon_troncal.png',
-			// 	anchor: new google.maps.Point(16,35),
-			// 	// origin: new google.maps.Point(0,0), //used for sprites, offset
-			// 	// size: new google.maps.Size(32,46), //used for sprites, display size
-			// 	scaledSize: new google.maps.Size(24,35)
-			// },
-			// 2: {
-			// 	url: 'img/marker_icon_pretroncal.png',
-			// 	anchor: new google.maps.Point(16,35),
-			// 	scaledSize: new google.maps.Size(24,35)
-			// },
-			// 3: {
-			// 	url: 'img/marker_icon_alimentadora.png',
-			// 	anchor: new google.maps.Point(16,35),
-			// 	scaledSize: new google.maps.Size(24,35)
-			// },
-			shadow: {
-				url: 'img/marker_icon_shadow.png',
-				anchor: new google.maps.Point(17,34),
-				scaledSize: new google.maps.Size(43,35)
-			},
-			1: {
-				url: 'img/stop_troncal.png',
-			},
-			2: {
-				url: 'img/stop_pretroncal.png',
-			},
-			3: {
-				url: 'img/stop_alimentadora.png',
-			}
-			// 1: {
-			// 	url: 'img/stops_sprite_small.png',
-			// 	origin: new google.maps.Point(0,0), //used for sprites, offset
-			// 	size: new google.maps.Size(20,35), //used for sprites, display size
-			// 	// anchor: new google.maps.Point(10,35),
-			// 	// scaledSize: new google.maps.Size(20,35)
-			// },
-			// 2: {
-			// 	url: 'img/stops_sprite_small.png',
-			// 	origin: new google.maps.Point(20,0), //used for sprites, offset
-			// 	size: new google.maps.Size(20,35), //used for sprites, display size
-			// },
-			// 3: {
-			// 	url: 'img/stops_sprite_small.png',
-			// 	origin: new google.maps.Point(40,0), //used for sprites, offset
-			// 	size: new google.maps.Size(20,35), //used for sprites, display size
-			// }
-		},
-
 		init: function() {
+			this.defaultPosition = new google.maps.LatLng(3.422556, -76.517222);
+			this.currentPosition = this.defaultPosition;
+			this.currentPositionMarker: null;
+			this.nearbyStopsMarkers: [];
+			this.ajaxTimeout = null;
+			this.$infoPopup: $('#info-popup');
+			this.marker_icons = {
+				dot: {
+					url: 'img/marker_dot.png',
+					anchor: new google.maps.Point(16.5,16.5),
+					scaledSize: new google.maps.Size(22,22)
+				},
+				dot_shadow: {
+					url: 'img/marker_dot_shadow.png',
+					anchor: new google.maps.Point(22,22),
+					scaledSize: new google.maps.Size(33,33)
+				},
+				shadow: {
+					url: 'img/marker_icon_shadow.png',
+					anchor: new google.maps.Point(17,34),
+					scaledSize: new google.maps.Size(43,35)
+				},
+				1: {
+					url: 'img/stop_troncal.png',
+				},
+				2: {
+					url: 'img/stop_pretroncal.png',
+				},
+				3: {
+					url: 'img/stop_alimentadora.png',
+				}
+			};
 			this.createMap();
 		},
 
