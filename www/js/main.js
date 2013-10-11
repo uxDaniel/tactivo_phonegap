@@ -233,7 +233,7 @@ window.ta = {
 				ta.map.$infoPopup
 					.find('h2').text(marker.getTitle()).end()
 					.find('.routes').html('').end()
-					.find('.ver-mas').attr('href', "#parada").data('id', marker.stop.id).end()
+					.find('.ver-mas').attr('href', "parada.html").data('id', marker.stop.id).end()
 					.popup('open');
 
 				$.ajax({
@@ -249,7 +249,7 @@ window.ta = {
 							// 	val = data[i];
 							// 	html_list[val.orientacion] = html_list[val.orientacion] || '';
 							// 	tipo = val.nombre_ruta.substring(0, 1);
-							// 	html_list[val.orientacion] += '<a href="#ruta" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-descripcion="' + val.descripcion + '" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'" title="'+val.descripcion+'">'+val.nombre_ruta+'</a>';
+							// 	html_list[val.orientacion] += '<a href="ruta.html" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-descripcion="' + val.descripcion + '" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'" title="'+val.descripcion+'">'+val.nombre_ruta+'</a>';
 							// }
 							// var html = '';
 							// // add opening and closing tags for the lists
@@ -260,7 +260,7 @@ window.ta = {
 							for (i = 0; i < data.length; ++i) {
 								val = data[i];
 								tipo = val.nombre_ruta.substring(0, 1);
-								html_list += '<a href="#ruta" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'">'+val.nombre_ruta+'</a>';
+								html_list += '<a href="ruta.html" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'">'+val.nombre_ruta+'</a>';
 								html = '<div data-role="controlgroup" data-type="horizontal">' + html_list + '</div>';
 							}
 							$("#parada").find('.routes').html(html).trigger('create');
@@ -511,11 +511,11 @@ window.ta = {
 						$.each(data, function (i, val) {
 							html += '<li data-tipo="' + val.tipo + '">';
 							if (val.tipo == 'p') { //paradas
-								html += '<a href="#parada" data-id="' + val.id + '" data-position="' + val.extra2 + '">';
+								html += '<a href="parada.html" data-id="' + val.id + '" data-position="' + val.extra2 + '">';
 								html += '<span class="stop icon tipo_' + val.extra + '"></span>';
 								html += val.nombre;
 							} else { //ruta
-								html += '<a href="#ruta" data-id="' + val.id + '" data-nombre="' + val.nombre + '" data-descripcion="' + val.extra + '" data-orientacion="' + val.extra2 + '"  data-linevariant="' + val.linevariant + '" class="routes">';
+								html += '<a href="ruta.html" data-id="' + val.id + '" data-nombre="' + val.nombre + '" data-descripcion="' + val.extra + '" data-orientacion="' + val.extra2 + '"  data-linevariant="' + val.linevariant + '" class="routes">';
 								tipo_ruta = val.nombre.substring(0, 1);
 								html += '<span class="' + tipo_ruta + '">' + val.nombre + '</span> ' + val.extra + ' (' + ta.orientaciones[val.extra2] + ')';
 							}
@@ -606,7 +606,7 @@ window.ta = {
 						// 	val = data[i];
 						// 	html_list[val.orientacion] = html_list[val.orientacion] || '';
 						// 	tipo = val.nombre_ruta.substring(0, 1);
-						// 	html_list[val.orientacion] += '<a href="#ruta" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'">'+val.nombre_ruta+'</a>';
+						// 	html_list[val.orientacion] += '<a href="ruta.html" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'">'+val.nombre_ruta+'</a>';
 						// }
 						// var html = '';
 						// // add opening and closing tags for the lists
@@ -617,7 +617,7 @@ window.ta = {
 						for (i = 0; i < data.length; ++i) {
 							val = data[i];
 							tipo = val.nombre_ruta.substring(0, 1);
-							html_list += '<a href="#ruta" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'">'+val.nombre_ruta+'</a>';
+							html_list += '<a href="ruta.html" data-id="'+val.id_ruta+'" data-nombre="'+val.nombre_ruta+'" data-orientacion="'+val.orientacion+'" data-linevariant="'+val.linevariant+'" data-role="button" data-mini="true" class="'+tipo+'">'+val.nombre_ruta+'</a>';
 							html = '<div data-role="controlgroup" data-type="horizontal">' + html_list + '</div>';
 						}
 						$("#parada").find('.routes').html(html).trigger('create');
@@ -695,7 +695,7 @@ window.ta = {
 						// construct the html list for stops
 						for (i = 0; i < data.length; ++i) {
 							parada = data[i];
-							html += '<li><a href="#parada" data-id="' + parada.id + '" data-lat="' + parada.lat + '" data-lng="' + parada.lng + '">';
+							html += '<li><a href="parada.html" data-id="' + parada.id + '" data-lat="' + parada.lat + '" data-lng="' + parada.lng + '">';
 							html += '<span class="stop icon tipo_' + parada.extra + '"></span>';
 							html += parada.nombre;
 							html += '</a></li>';
@@ -747,11 +747,11 @@ window.ta = {
 		// $.each(paradasf, function (i, val) {
 		// 	html += '<li data-tipo="' + val.tipo + '">';
 		// 	if (val.tipo == 'p') { //paradas
-		// 		html += '<a href="#parada" data-id="' + val.id + '" data-position="' + val.extra2 + '">';
+		// 		html += '<a href="parada.html" data-id="' + val.id + '" data-position="' + val.extra2 + '">';
 		// 		html += '<span class="stop icon tipo_' + val.extra + '"></span>';
 		// 		html += val.nombre;
 		// 	} else { //ruta
-		// 		html += '<a href="#ruta" data-id="' + val.id + '" data-nombre="' + val.nombre + '" data-descripcion="' + val.extra + '" data-orientacion="' + val.extra2 + '" class="routes">';
+		// 		html += '<a href="ruta.html" data-id="' + val.id + '" data-nombre="' + val.nombre + '" data-descripcion="' + val.extra + '" data-orientacion="' + val.extra2 + '" class="routes">';
 		// 		tipo_ruta = val.nombre.substring(0, 1);
 		// 		html += '<span class="' + tipo_ruta + '">' + val.nombre + '</span> ' + val.extra + ' (' + ta.orientaciones[val.extra2] + ')';
 		// 	}

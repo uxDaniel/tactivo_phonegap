@@ -1,0 +1,75 @@
+<article data-role="page" id="mapa">
+	<header data-role="header">
+		<a href="#menu-panel-mapa" data-icon="custom" data-iconpos="notext" class="show-lines">Menú</a>
+		<h1>Paradas Cercanas</h1>
+		<a href="#map-options-panel" data-icon="custom" data-iconpos="notext" class="gear">Opciones del mapa</a>
+	</header>
+	<section data-role="content">
+		<!-- form class="row clearfix planear-viaje">
+			<div class="eight columns">
+				<input type="text" name="origen" placeholder="Parada inicial...">
+				<input type="text" name="destino" placeholder="Parada final...">
+			</div>
+			<div class="four columns">
+				<input type="submit" value="Mapa">
+			</div>
+		</form -->
+		<a class="control location icon" title="Mostrar mi ubicación"><span></span>Localizarme</a>
+		<section class="map-canvas"></section>
+	</section>
+	<footer data-role="footer">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="mapa.html" data-icon="custom" class="map ui-btn-active ui-state-persist">Mapa</a></li>
+				<li><a href="buscar.html" data-icon="custom" class="magnify">Buscar</a></li>
+				<li><a href="favoritos.html" data-icon="custom" class="star">Favoritos</a></li>
+				<li><a href="noticias.html" data-icon="custom" class="bullhorn">Noticias</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<aside data-role="panel" data-position="left" data-display="reveal" id="menu-panel-mapa">
+		<h2 class="logo"><a href="index.html">Transporte Activo</a></h2>
+		<ul data-role="listview" data-icon="custom" class="menu dark">
+			<li class="house"><a href="index.html">Inicio</a></li>
+			<li class="map"><a href="mapa.html" class="ui-btn-active ui-state-persist">Mapa</a></li>
+			<li class="magnify"><a href="buscar.html">Buscar</a></li>
+			<li class="star"><a href="favoritos.html">Favoritos</a></li>
+			<li class="bullhorn"><a href="noticias.html">Noticias</a></li>
+			<li class="id-card"><a href="acerca-de.html">Acerca de</a></li>
+		</ul>
+
+		<h4>Una iniciativa de</h4>
+		<a class="logo-ciudadanos" href="http://ciudadanosactivos.com" target="_blank"><img src="img/logo-ciudadanos.png"></a>
+		<a href="http://ciudadanosactivos.com/contactenos/" target="_blank" class="contacto">Contáctenos</a>
+	</aside><!-- #menu-panel-mapa -->
+	<aside data-role="panel" data-position="right" data-display="reveal" id="map-options-panel">
+		<h2>Opciones del mapa</h2>
+		<form id="map-options">
+			<fieldset data-role="controlgroup">
+				<legend>Mostrar:</legend>
+				<input type="checkbox" name="ver-troncales" id="ver-troncales" checked="checked">
+				<label for="ver-troncales">Estaciones (Troncales)</label>
+				<input type="checkbox" name="ver-pretroncales" id="ver-pretroncales" checked="checked">
+				<label for="ver-pretroncales">Paradas Pretroncales</label>
+				<input type="checkbox" name="ver-alimentadoras" id="ver-alimentadoras" checked="checked">
+				<label for="ver-alimentadoras">Paradas Alimentadoras</label>
+			</fieldset>
+		</form>
+	</aside><!-- #map-options-panel -->
+	<aside data-role="popup" id="info-popup" data-position-to="window" data-overlay-theme="a" data-theme="c">
+		<header data-role="header" data-theme="a" class="ui-corner-top">
+			<h2></h2>
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Cerrar</a>
+		</header>
+		<section data-role="content">
+			<h3>Rutas</h3>
+			<section class="routes"></section>
+			<div class="actions">
+				<!--a href="#" data-role="button" data-inline="true">Iniciar Aquí</a>
+				<a href="#" data-role="button" data-inline="true" data-rel="back">Llegar Aquí</a-->
+			</div>
+			<a href="#parada" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right" class="ver-mas">Ver más</a>
+		</section>
+	</aside><!-- #info-popup -->
+</article><!-- mapa.html -->
+
