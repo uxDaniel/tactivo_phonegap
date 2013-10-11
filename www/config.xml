@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>HelloWorld</name>
+<widget id="com.transporteactivo.app" version="0.9.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Transporte Activo</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Información y participación ciudadana para el sistema de transporte Masivo Integrado de Occidente, MIO de la ciudad de Santiago de Cali.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="zlapper@gmail.com" href="http://transporteactivo.com">
+        Daniel García
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
